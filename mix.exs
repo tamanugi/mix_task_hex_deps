@@ -2,7 +2,7 @@ defmodule MixTaskDepsAdd.Mixfile do
   use Mix.Project
 
   def project do
-    [app: :mix_task_deps_add,
+    [app: :mix_task_hex_deps,
      version: "0.1.0",
      elixir: "~> 1.4",
      build_embedded: Mix.env == :prod,
