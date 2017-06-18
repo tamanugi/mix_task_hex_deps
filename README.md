@@ -1,19 +1,14 @@
-# MixTaskDepsAdd
+# MixTaskHexDeps
 
-**TODO: Add description**
+HexDeps is Print hex package info with deps_format like `{:hoge, "~> 1.0.0"}`.
+
+```
+$ mix hex.deps httpoison poison credo
+{:credo, "~> 0.8.1"},
+{:poison, "~> 3.1.0"},
+{:httpoison, "~> 0.11.2"}
+```
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `mix_task_deps_add` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [{:mix_task_deps_add, "~> 0.1.0"}]
-end
-```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/mix_task_deps_add](https://hexdocs.pm/mix_task_deps_add).
-
+**TODO: install**
