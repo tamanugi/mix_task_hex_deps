@@ -35,7 +35,7 @@ defmodule Mix.Tasks.Hex.Deps do
     deps_string = packages
     |> Enum.map(fn e ->
       %{name: name, version: version} = e
-      inspect {String.to_atom(name), "~>#{version}"}
+      inspect {String.to_atom(name), "~> #{version}"}
     end)
     |> Enum.join(",\n")
 
