@@ -17,7 +17,7 @@ defmodule Mix.Tasks.Hex.Deps do
   defp process(args), do: process(args, [])
   defp process([], acc), do: acc
   defp process([package_name | tail], acc) do
-    package = Hex.API.Package.get(package_name)
+    package = Hex.API.Package.get("hexpm", package_name)
     |> process_hex_response(package_name)
 
     process(tail, [package | acc])
